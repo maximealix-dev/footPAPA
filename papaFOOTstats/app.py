@@ -67,7 +67,7 @@ team1 = st.selectbox("🏠 Équipe à domicile :", teams)
 team2 = st.selectbox("🚗 Équipe à l'extérieur :", teams)
 
 if team1 == team2:
-    st.warning("Choisis deux équipes différentes !")
+    st.warning("Créer par Maxime.L !")
     st.stop()
 
 if st.button("🔮 Prédire le résultat (allez Marseille)"):
