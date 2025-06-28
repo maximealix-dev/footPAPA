@@ -44,7 +44,7 @@ def get_fixtures():
         })
     return pd.DataFrame(matches)
 
-st.title("⚽ MAXFOOT - Prédicteur Ligue 1 (Football-Data.org)")
+st.title("PapaFoot - Prédicteur Ligue 1 (Football-Data.org)")
 
 teams = get_teams()
 fixtures = get_fixtures()
