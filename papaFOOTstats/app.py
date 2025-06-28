@@ -44,7 +44,7 @@ def get_fixtures():
         })
     return pd.DataFrame(matches)
 
-st.title("⚽ MAXFOOT - Prédicteur Ligue 1 (Football-Data.org)")
+st.title("⚽ PAPA FOOT - Prédicteur Ligue 1 (Alix,Max,Seb,Ricky")
 
 teams = get_teams()
 fixtures = get_fixtures()
@@ -70,7 +70,7 @@ if team1 == team2:
     st.warning("Choisis deux équipes différentes !")
     st.stop()
 
-if st.button("🔮 Prédire le résultat"):
+if st.button("🔮 Prédire le résultat (allez Marseille)"):
     input_data = pd.DataFrame(columns=features.columns)
     input_data.loc[0] = 0
     col_team1 = f"Team1_{team1}"
