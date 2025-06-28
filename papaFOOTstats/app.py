@@ -44,7 +44,7 @@ def get_fixtures():
         })
     return pd.DataFrame(matches)
 
-st.title("PapaFoot - Prédicteur Ligue 1 (Alix,Seb,Ricky,Maxime,)")
+st.title("PapaFoot - Prédicteur Ligue 1 (Alix,Seb,Ricky,Max,)")
 
 teams = get_teams()
 fixtures = get_fixtures()
@@ -67,10 +67,10 @@ team1 = st.selectbox("🏠 Équipe à domicile :", teams)
 team2 = st.selectbox("🚗 Équipe à l'extérieur :", teams)
 
 if team1 == team2:
-    st.warning("Choisis deux équipes différentes (marseille les meilleurs !")
+    st.warning("Choisis deux équipes différentes (marseille les meilleurs) !")
     st.stop()
 
-if st.button("🔮 Prédire le résultat"):
+if st.button("🔮 Prédire le résultat Magie Magie "):
     input_data = pd.DataFrame(columns=features.columns)
     input_data.loc[0] = 0
     col_team1 = f"Team1_{team1}"
@@ -91,7 +91,7 @@ if st.button("🔮 Prédire le résultat"):
     elif prediction == 'Team2':
         st.success(f"🏆 {team2} a plus de chances de gagner.")
     else:
-        st.info("⚖️ Match nul probable.")
+        st.info("⚖️ Match nul probable.NULLLL")
 
     st.subheader("🔢 Probabilités :")
     for label, p in zip(labels, proba):
